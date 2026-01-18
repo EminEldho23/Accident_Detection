@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+runs/
+data/test/
+.venv/
+.env
+*.mp4
+*.jpg
+*.png
+!data/

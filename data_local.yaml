@@ -1,0 +1,17 @@
+train: C:/trafcon/4_basics/Realtime-Accident-Detection-Yolov8/data/test/images
+val: C:/trafcon/4_basics/Realtime-Accident-Detection-Yolov8/data/test/images
+
+nc: 10
+names:
+  [
+    "bike",
+    "bike_bike_accident",
+    "bike_object_accident",
+    "bike_person_accident",
+    "car",
+    "car_bike_accident",
+    "car_car_accident",
+    "car_object_accident",
+    "car_person_accident",
+    "person",
+  ]

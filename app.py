@@ -38,6 +38,10 @@ subject = "Accident detected"
 
 
 def send_email(accident_type, image):
+    if not all([sender_email, sender_password, receiver_email]):
+        print("Email credentials not set. Skipping email notification.")
+        return
+
     body = accident_type
 
     msg = MIMEMultipart()
@@ -103,7 +107,7 @@ def check_acc(box):
     return result
 
 
-st.set_option('deprecation.showfileUploaderEncoding', False)
+
 
 st.set_page_config(
     page_title="Accident Detection",
